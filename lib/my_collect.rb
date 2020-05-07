@@ -1,3 +1,5 @@
+pets = ["Ferguson","Stella"]
+
 def my_collect(array)
   i = 0 
   collection = []
@@ -7,4 +9,9 @@ def my_collect(array)
     i += 1 
   end
   collection
+end
+
+
+my_collect(pets) do |name|
+  puts name.upcase
 end
